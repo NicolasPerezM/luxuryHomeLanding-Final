@@ -1449,7 +1449,7 @@ figcaption {
 
 .rl-styleguide_nav {
   z-index: 1000;
-  background-color: var(--background-color--background-alternate);
+  background-color: white;
   border-radius: .75rem;
   margin-top: 1rem;
   padding: .5rem;
