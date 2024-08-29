@@ -731,11 +731,20 @@ figcaption {
 
 .button {
   border: 1px solid var(--base-color-neutral--black);
-  background-color: var(--base-color-neutral--black);
+  background-color: var(--base-color-brand--primary);
+  box-shadow: -4px 4px 0 0 var(--base-color-brand--primary);
   color: var(--base-color-neutral--white);
   text-align: center;
-  padding: .75rem 1.5rem;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  padding: 8px 16px;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--base-color-brand--background);
+  box-shadow: 0 0 0 0 var(--base-color-brand--primary);
+  transform: translate3d(0, 4px, 4px);
 }
 
 .button.is-link {
@@ -809,6 +818,7 @@ figcaption {
 .button.is-small {
   border-color: var(--base-color-brand--primary);
   background-color: var(--base-color-brand--primary);
+  box-shadow: none;
   border-radius: 15px;
   padding: .5rem 2rem;
   font-size: 1.3rem;
@@ -877,6 +887,23 @@ figcaption {
 .button.is-icon-only {
   padding-left: .75rem;
   padding-right: .75rem;
+}
+
+.button.is-contact {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  border-color: var(--base-color-brand--background);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .3s;
+  display: flex;
+}
+
+.button.is-contact:hover {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  border-color: var(--base-color-brand--primary);
+  background-color: var(--base-color-brand--primary);
+  color: var(--base-color-brand--white);
 }
 
 .text-weight-normal {
@@ -2423,6 +2450,10 @@ figcaption {
   margin-right: 1rem;
 }
 
+.contact16_item-text-wrapper {
+  display: block;
+}
+
 .contact16_map-wrapper {
   width: 100%;
   height: 35rem;
@@ -2434,8 +2465,16 @@ figcaption {
 }
 
 .text-block {
-  color: #00f;
-  font-size: 1.2rem;
+  color: var(--base-color-brand--white);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-block:hover {
+  color: var(--base-color-brand--white);
+  font-weight: 700;
 }
 
 .testimonial25_component {
@@ -2621,6 +2660,75 @@ figcaption {
 
 .heading-9 {
   color: var(--base-color-brand--primary);
+}
+
+.button-3 {
+  color: #040126;
+  text-align: center;
+  letter-spacing: -.03rem;
+  background-color: #9adbff;
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  overflow: visible;
+}
+
+.button-3.c-20 {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: #d8fafe;
+  background-color: #fff0;
+  border: 1px solid #ffffff80;
+  border-radius: 50rem;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .35s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-3.c-20:hover {
+  background-color: #ffffff26;
+  border-color: #fffc;
+}
+
+.btn-txt {
+  position: relative;
+}
+
+.btn-icon-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-icon-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.btn-icon-arrow.hover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+.div-block-2 {
+  background-color: var(--base-color-brand--primary);
+  border-radius: 10px;
+  padding: 4px 16px;
+}
+
+.link-block, .link-block-2 {
+  text-decoration: none;
+}
+
+.text-block-2 {
+  color: var(--base-color-brand--black);
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3641,6 +3749,13 @@ figcaption {
     width: auto;
   }
 
+  .button.is-contact {
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+  }
+
   .rl-styleguide_component {
     grid-template-columns: 1fr;
   }
@@ -3685,6 +3800,16 @@ figcaption {
 
   .contact16_component, .contact16_contact-list {
     grid-template-columns: 1fr;
+  }
+
+  .contact16_item {
+    flex-flow: column;
+  }
+
+  .text-block {
+    width: auto;
+    font-size: .9rem;
+    font-weight: 700;
   }
 }
 
