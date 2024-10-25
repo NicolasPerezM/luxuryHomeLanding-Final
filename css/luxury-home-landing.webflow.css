@@ -2710,6 +2710,29 @@ figcaption {
   padding: 4px 16px;
 }
 
+.div-block-3 {
+  display: flex;
+}
+
+.price-container {
+  margin-top: 8px;
+}
+
+.subrayao {
+  flex-flow: row;
+  justify-content: space-between;
+  text-decoration: underline;
+  display: block;
+}
+
+.paragraph {
+  font-weight: 700;
+}
+
+.paragraph-2 {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 1440px) {
   .button.is-small.is-cta {
     display: block;
