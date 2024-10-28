@@ -2711,11 +2711,15 @@ figcaption {
 }
 
 .div-block-3 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   display: flex;
 }
 
 .price-container {
+  justify-content: space-between;
   margin-top: 8px;
+  display: flex;
 }
 
 .subrayao {
