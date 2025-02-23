@@ -861,6 +861,10 @@ figcaption {
   border-color: var(--base-color-brand--shade-primary);
   background-color: var(--base-color-brand--background);
   color: var(--base-color-brand--shade-primary);
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
 }
 
 .button.is-small.is-cta:hover {
@@ -1735,7 +1739,7 @@ figcaption {
 }
 
 .body {
-  background-color: var(--base-color-brand--background);
+  background-color: var(--base-color-brand--white);
   flex-flow: column;
   display: block;
 }
@@ -1859,16 +1863,20 @@ figcaption {
 }
 
 .main-cta {
-  background-color: var(--base-color-brand--shade-primary);
+  background-color: #0000;
+  background-image: linear-gradient(#03262ecc, #03262ecc), url('../images/freepik__expand__53896.png');
+  background-position: 0 0, 50% 100%;
+  background-size: auto, cover;
   justify-content: center;
   align-items: center;
-  height: 320px;
+  height: 420px;
+  max-height: 420px;
   margin-top: 0;
   display: flex;
 }
 
 .cta-main-text {
-  color: var(--base-color-brand--background);
+  color: var(--base-color-brand--white);
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -2248,9 +2256,12 @@ figcaption {
 
 .layout240_item {
   text-align: center;
+  border: 1px solid #0000;
+  border-radius: 18px 18px 32px 32px;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 20px;
   display: flex;
 }
 
@@ -2499,7 +2510,7 @@ figcaption {
 }
 
 .testimonial25_card {
-  border: 1px solid var(--border-color--border-primary);
+  border: 1px solid #0000;
   border-radius: 10px;
   flex-direction: column;
   justify-content: space-between;
@@ -3915,6 +3926,10 @@ figcaption {
 
   .button.is-small.gallery-variant {
     width: auto;
+  }
+
+  .button.is-small.is-cta {
+    width: 210px;
   }
 
   .rl-styleguide_component {
