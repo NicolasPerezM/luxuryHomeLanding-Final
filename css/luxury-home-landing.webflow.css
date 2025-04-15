@@ -3427,6 +3427,11 @@ figcaption {
   display: flex;
 }
 
+.image-6 {
+  width: 40px;
+  height: auto;
+}
+
 @media screen and (min-width: 1440px) {
   .button.is-small.is-cta {
     display: block;
@@ -4955,8 +4960,8 @@ figcaption {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: 3%;
   }
 
   .whatsapp-chat {
